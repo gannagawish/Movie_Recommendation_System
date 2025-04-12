@@ -1,0 +1,6 @@
+Successfully added: Name: Hassan Ali, User Id: 12345678X, Movie IDs: [TSR001, TDK003]
+Successfully added: Name: Ali Mohamed, User Id: 87654321W, Movie IDs: [TG002]
+
+Stored Users:
+Hassan Ali,12345678X
+Ali Mohamed,87654321W
