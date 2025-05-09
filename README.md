@@ -21,13 +21,26 @@ A simple Java-based Movie Recommendation System that suggests movies based on us
 ```
 MovieRecommendationSystem/
 ├── src/
-│   ├── Main.java                # Entry point of the program
-│   ├── Movie.java               # Movie class model
-│   ├── User.java                # User class model
-│   ├── Recommender.java         # Core recommendation logic
-│   └── DataLoader.java          # Loads movie and user data
+│   └── main/java/org/example/
+│       ├── Main.java              # Entry point of the program
+│       ├── Movie.java             # Movie class model
+│       ├── User.java              # User class model
+│       ├── Recommend.java         # Core recommendation logic
+│       ├── InputHandling.java     # Handles parsing and validation
+│       └── exceptions/            # Custom exceptions like TitleException, LetterException, etc.
+│
+├── test/
+│   └── java/org/example/
+│       ├── UnitTesting/           # Unit tests (e.g., InputHandlingTest, MovieTest)
+│       ├── WhiteBoxTesting/       # For coverage and white-box analysis
+│       └── integration/           # Integration tests across components
+│
 ├── README.md
-└── .gitignore
+├── movies.txt
+├── users.txt
+├── recommendations.txt
+└── output.txt
+
 ```
 
 ---
