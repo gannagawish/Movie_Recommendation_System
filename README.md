@@ -21,25 +21,46 @@ A simple Java-based Movie Recommendation System that suggests movies based on us
 ```
 MovieRecommendationSystem/
 ├── src/
-│   └── main/java/org/example/
-│       ├── Main.java              # Entry point of the program
-│       ├── Movie.java             # Movie class model
-│       ├── User.java              # User class model
-│       ├── Recommend.java         # Core recommendation logic
-│       ├── InputHandling.java     # Handles parsing and validation
-│       └── exceptions/            # Custom exceptions like TitleException, LetterException, etc.
+│   ├── main/java/org/example/
+│   │   ├── Main.java                  # Entry point of the program
+│   │   ├── CodesCracker.java          # Loads and parses movie data
+│   │   ├── InputHandling.java         # Parses and validates user input
+│   │   ├── Movie.java                 # Movie class model
+│   │   ├── Recommend.java             # Core recommendation logic
+│   │   ├── RecommendationService.java# Orchestrates the recommendation system flow
+│   │   ├── User.java                  # User class model
+│   │   └── exceptions/                # Custom exceptions (TitleException, LetterException, etc.)
 │
-├── test/
-│   └── java/org/example/
-│       ├── UnitTesting/           # Unit tests (e.g., InputHandlingTest, MovieTest)
-│       ├── WhiteBoxTesting/       # For coverage and white-box analysis
-│       └── integration/           # Integration tests across components
+│   ├── test/java/org/example/
+│   │   ├── UnitTesting/               # Unit tests for individual components
+│   │   │   ├── CodesCrackerTest.java
+│   │   │   ├── RecommendTest.java
+│   │   │   ├── RecommendationServiceTest.java
+│   │   │   └── UserTest.java
+│   │   ├── WhiteBoxTesting/          # White-box tests organized by coverage type
+│   │   │   ├── Branch/
+│   │   │   │   └── InputHandlingTest.java
+│   │   │   ├── DataFlow/
+│   │   │   │   ├── GenreParserTest.java
+│   │   │   │   └── IdCheckerTest.java
+│   │   │   ├── Path/
+│   │   │   │   └── TitleCheckerTests.java
+│   │   │   └── Statment/
+│   │   │       ├── CodesCrackerTest.java
+│   │   │       ├── RecommendTest.java
+│   │   │       └── UserTest.java
+│   │   └── integration/              # Integration tests across components
+│   │       ├── CodesCrackerMovieIntegrationTest.java
+│   │       ├── InputHandlingUserIntegrationTest.java
+│   │       ├── RecommendSystemIntegrationTest.java
+│   │       └── RecommendationServiceIntegrationTest.java
 │
-├── README.md
-├── movies.txt
-├── users.txt
-├── recommendations.txt
-└── output.txt
+├── META-INF/
+├── movies.txt                        # Sample movie input file
+├── users.txt                         # Sample user input file
+├── recommendations.txt               # Output of the recommendation system
+├── output.txt                        # Additional system output if any
+└── README.md                         # Project description and setup instruction
 
 ```
 
