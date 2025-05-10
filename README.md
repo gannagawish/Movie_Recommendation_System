@@ -71,7 +71,7 @@ MovieRecommendationSystem/
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/your-username/MovieRecommendationSystem.git
+git clone https://github.com/gannagawish/MovieRecommendationSystem.git
 ```
 
 2. **Open in your Java IDE** (IntelliJ, Eclipse, NetBeans, etc.)
